@@ -1,0 +1,623 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FJF Automobiles - Présentation Projet Web</title>
+    
+    <!-- Polices officielles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Poppins:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+    
+    <!-- Icônes Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    
+    <link rel="stylesheet" href="ontest.css" />
+</head>
+<body>
+
+    <div class="carousel-shell">
+        <!-- Header -->
+        <header class="presentation-header">
+            <div class="brand-logo">
+                <img src="img/fjf-logo-2-removebg-preview.png" alt="FJF Automobiles" style="height: 42px; object-fit: contain;">
+            </div>
+            <div class="slide-counter" id="slideCounter">1 / 23</div>
+        </header>
+
+        <!-- Viewport -->
+        <div class="carousel-viewport" id="viewport">
+            <div class="carousel-track" id="carouselTrack">
+
+                <!-- ==================== INTRO ==================== -->
+
+                <!-- SLIDE 1 : COUVERTURE -->
+                <section class="slide">
+                    <div class="slide-content" style="text-align: center;">
+                        <img src="img/fjf-logo-2-removebg-preview.png" alt="FJF Automobiles" style="height: 90px; object-fit: contain; margin: 0 auto 24px auto; display: block;">
+                        <span class="slide-subtitle animate-up">Soutenance de projet Web</span>
+                        <h1 class="slide-title animate-up delay-1" style="font-size: clamp(2.4rem, 5vw, 4.4rem);">Refonte Digitale<br><span>FJF Automobiles</span></h1>
+                        <p class="slide-text animate-up delay-2" style="margin: 0 auto 50px auto; max-width: 800px;">
+                            Stratégie, UX/UI Design et Développement technique pour le site web d'un garage automobile de réparation.
+                        </p>
+                        <div class="animate-up delay-3">
+                            <button class="btn-primary" onclick="nextSlide(event)">
+                                Commencer la présentation <i class="bi bi-play-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SLIDE 2 : LE CONTEXTE -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">01. Origine du projet</span>
+                        <h2 class="slide-title medium animate-up delay-1">Rappel du <span>Contexte</span></h2>
+                        
+                        <div class="grid-2-col animate-up delay-2">
+                            <div>
+                                <p class="slide-text">
+                                    FJF Automobiles est un garage de réparation automobile, mais son image web ne reflète pas la qualité du service physique fourni à ses clients.
+                                </p>
+                                <ul class="big-list">
+                                    <li><i class="bi bi-x-circle"></i> Site web obsolète</li>
+                                    <li><i class="bi bi-x-circle"></i> Navigation mobile difficile</li>
+                                    <li><i class="bi bi-x-circle"></i> Prise de rendez-vous uniquement par téléphone</li>
+                                </ul>
+                            </div>
+                            <div class="feature-card highlight" style="background: var(--rouge-fjf); color: white; border: none; text-align: center;">
+                                <h3 style="color: white; font-size: 2.2rem;"><i class="bi bi-exclamation-triangle" style="font-size: 3rem; margin-bottom: 20px; display: block;"></i> L'Enjeu</h3>
+                                <p style="color: white; font-size: 1.5rem; opacity: 0.9;">
+                                    Comment transformer le site web en un outil de gestion client, capable de digitaliser la prise de rendez-vous et les services ?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SLIDE 3 : LA PROMESSE -->
+                <section class="slide">
+                    <div class="slide-content" style="text-align: center;">
+                        <span class="slide-subtitle animate-up">02. Notre Réponse</span>
+                        <i class="bi bi-stars animate-up delay-1" style="font-size: clamp(2.5rem, 5vw, 4.2rem); color: var(--rouge-fjf); display: block; margin-bottom: 20px;"></i>
+                        <h2 class="slide-title animate-up delay-2">Un <span>Outil Digital</span> au Service du Garage</h2>
+                        <p class="slide-text animate-up delay-3" style="margin: 0 auto; max-width: 1000px; font-size: 2.2rem; line-height: 1.5;">
+                            "Une plateforme sur-mesure, claire et efficace, conçue pour simplifier la prise de rendez-vous et renforcer la relation client."
+                        </p>
+                    </div>
+                </section>
+
+                <!-- ==================== STRATEGIE ==================== -->
+
+                <!-- SLIDE 4 : LES 3 PILIERS -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">03. Stratégie</span>
+                        <h2 class="slide-title medium animate-up delay-1">Les 3 <span>Piliers</span> du projet</h2>
+                        
+                        <div class="grid-cards animate-up delay-2">
+                            <div class="feature-card">
+                                <div class="card-icon"><i class="bi bi-person-vcard"></i></div>
+                                <h3>Espace Client & Donnees</h3>
+                                <p>
+                                    Creation de compte client avec connexion/inscription, stockage des infos,
+                                    gestion des vehicules et suivi de l'historique des rendez-vous.
+                                </p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="card-icon"><i class="bi bi-lightning-charge"></i></div>
+                                <h3>Performance</h3>
+                                <p>Un site léger et performant, optimisé pour une expérience utilisateur fluide et rapide.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="card-icon"><i class="bi bi-calendar-check"></i></div>
+                                <h3>Accessibilité</h3>
+                                <p>Une prise de rendez-vous en ligne simple, disponible 24h/24, pour faciliter le contact client.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SLIDE 5 : CIBLES -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">04. Utilisateurs</span>
+                        <h2 class="slide-title medium animate-up delay-1">À qui s'adresse <span>le site</span> ?</h2>
+                        <p class="slide-text animate-up delay-2">Deux parcours utilisateurs principaux à optimiser :</p>
+                        
+                        <div class="grid-2-col animate-up delay-3">
+                            <div class="feature-card" style="border-top: 6px solid var(--rouge-fjf);">
+                                <h3><i class="bi bi-person-check" style="margin-right: 15px; color: var(--rouge-fjf);"></i>Le Client Régulier</h3>
+                                <p>Il connaît déjà le garage. Il a besoin de prendre rendez-vous rapidement, de suivre ses interventions passées et d'accéder à son espace personnel.</p>
+                            </div>
+                            <div class="feature-card" style="border-top: 6px solid #1a1d20;">
+                                <h3><i class="bi bi-search" style="margin-right: 15px; color: var(--texte-principal);"></i>Le Nouveau Prospect</h3>
+                                <p>Il cherche un garage de confiance. Il veut que ce soit rapide mais sécurisé pour rapidement prendre rendez-vous pour sa voiture.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==================== DESIGN SYSTEM ==================== -->
+
+                <!-- SLIDE 6 : IDENTITÉ VISUELLE - COULEURS -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">05. Design System</span>
+                        <h2 class="slide-title medium animate-up delay-1">Design <span>System</span></h2>
+                        <p class="slide-text animate-up delay-2">Palette de couleurs.</p>
+                        
+                        <div class="color-palette animate-up delay-3" style="justify-content: center; gap: 60px; margin-top: 60px;">
+                            <div class="color-swatch">
+                                <div class="color-circle" style="background: #de0e1e; width: 150px; height: 150px;"></div>
+                                <span style="font-size: 1.5rem; display: block; margin-bottom: 10px;">#de0e1e</span>
+                                <strong style="font-size: 1.2rem;">Rouge FJF (Action)</strong>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="color-circle" style="background: #111315; width: 150px; height: 150px;"></div>
+                                <span style="font-size: 1.5rem; display: block; margin-bottom: 10px;">#111315</span>
+                                <strong style="font-size: 1.2rem;">Noir (Texte / Luxe)</strong>
+                            </div>
+                            <div class="color-swatch">
+                                <div class="color-circle" style="background: #f8f9fc; width: 150px; height: 150px; border: 4px solid #e2e8f0;"></div>
+                                <span style="font-size: 1.5rem; display: block; margin-bottom: 10px;">#f8f9fc</span>
+                                <strong style="font-size: 1.2rem;">Gris perle (Fond)</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SLIDE 7 : IDENTITÉ VISUELLE - TYPO -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">05. Design System</span>
+                        <h2 class="slide-title medium animate-up delay-1">Design <span>System</span></h2>
+                            <p class="slide-text animate-up delay-2">Choix typographiques et lisibilité.</p>
+                        
+                        <div class="grid-2-col animate-up delay-3" style="margin-top: 60px;">
+                            <div class="feature-card">
+                                <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 4rem; margin-bottom: 20px; color: var(--rouge-fjf);">Montserrat</h1>
+                                <h3 style="margin-bottom: 10px;">Typographie de Titrage</h3>
+                                <p>Caractère géométrique, fort et imposant. Idéal pour les titres marketing et l'identité de marque.</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <h1 style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 4rem; margin-bottom: 20px;">Poppins</h1>
+                                <h3 style="margin-bottom: 10px;">Typographie de Texte</h3>
+                                <p>Ronde et lisible. Elle garantit un confort de lecture optimal pour les pages de services et les informations pratiques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SLIDE 8 : UI COMPONENTS -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">06. Interface</span>
+                        <h2 class="slide-title medium animate-up delay-1">Composants <span>UI</span></h2>
+                        <p class="slide-text animate-up delay-2">Une interface claire et rassurante: rapide, simple et facile a utiliser pour tous les clients.</p>
+
+                        <div class="grid-2-col animate-up delay-3" style="margin-top: 34px; align-items: start; gap: 18px;">
+                            <div class="feature-card" style="text-align: left;">
+                                <h3 style="margin-bottom: 12px;">Pourquoi ca marche</h3>
+                                <ul class="big-list" style="margin: 0; font-size: 1rem;">
+                                    <li><i class="bi bi-check2-circle"></i> Facile d'utilisation</li>
+                                    <li><i class="bi bi-lightning-charge"></i> Rapide a comprendre</li>
+                                    <li><i class="bi bi-hand-index-thumb"></i> Simple sur mobile</li>
+                                </ul>
+                            </div>
+
+                            <div style="text-align: center;">
+                                <p style="margin: 0 0 14px 0; color: var(--texte-secondaire); font-weight: 600;">Action principale visible en 1 clic</p>
+                                <button class="btn-primary" style="pointer-events: none; padding: 16px 48px; font-size: 1.1rem;">
+                                <i class="bi bi-calendar-check" style="margin-right: 8px;"></i> Prendre Rendez-vous
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==================== TECHNIQUE & PROJET ==================== -->
+
+                <!-- SLIDE 13 : FONCTIONNALITÉS CLÉS -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">07. Back-office</span>
+                        <h2 class="slide-title medium animate-up delay-1">Administration <span>Simplifiée</span></h2>
+                        <p class="slide-text animate-up delay-2">Le site est équipé d'outils puissants pour l'équipe FJF afin de gérer les rendez-vous et les clients facilement.</p>
+                        
+                        <div class="grid-cards animate-up delay-3">
+                            <div class="feature-card">
+                                <div class="card-icon" style="background: #e0f2fe; color: #0284c7;"><i class="bi bi-calendar-week"></i></div>
+                                <h3>Gestion des RDV</h3>
+                                <p>Interface d'administration pour visualiser, confirmer ou annuler les rendez-vous clients en temps réel.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="card-icon" style="background: #fef08a; color: #a16207;"><i class="bi bi-person-lines-fill"></i></div>
+                                <h3>Espace Clients</h3>
+                                <p>Chaque client dispose d'un espace personnel pour suivre ses interventions et gérer ses réservations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SLIDE X : PLUGINS WORDPRESS DÉVELOPPÉS -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">07b. Plugins sur-mesure</span>
+                        <h2 class="slide-title medium animate-up delay-1">Plugins <span>WordPress</span> Développés</h2>
+                        <p class="slide-text animate-up delay-2">3 plugins PHP entièrement développés et intégrés au thème FJF-Theme.</p>
+                        <div class="grid-cards animate-up delay-3">
+                            <div class="feature-card">
+                                <div class="card-icon" style="background: #ede9fe; color: #7c3aed;"><i class="bi bi-calendar-plus"></i></div>
+                                <h3>fjf-rdv</h3>
+                                <p>Prise de rendez-vous avec formulaire personnalisé et gestion admin.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="card-icon" style="background: #fef3c7; color: #d97706;"><i class="bi bi-journal-check"></i></div>
+                                <h3>fjf-reservations</h3>
+                                <p>Suivi et gestion des réservations depuis l'interface WordPress.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="card-icon" style="background: #dcfce7; color: #16a34a;"><i class="bi bi-car-front"></i></div>
+                                <h3>cruziplug</h3>
+                                <p>CPT Voitures avec champs personnalisés pour la gestion du parc atelier.</p>
+                            </div>
+                    </div>
+                </section>
+
+                <!-- ==================== PETIT TOUR DU SITE ==================== -->
+
+                <!-- SLIDE 9 : MAQUETTE ACCUEIL -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">08. Petit tour du site</span>
+                        <h2 class="slide-title medium animate-up delay-1">Petit tour du <span>site</span></h2>
+                        <p class="slide-text animate-up delay-2">Etape 1: Page d'accueil/ Plaque d'immatriculation.</p>
+                        
+                        <div class="mockup-container animate-up delay-3" style="height: 500px;">
+                            <img src="img/hero.png" alt="Capture page d'accueil" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SLIDE 10 : MAQUETTE SERVICES -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">08. Petit tour du site</span>
+                        <h2 class="slide-title medium animate-up delay-1">Petit tour du <span>site</span></h2>
+                        <p class="slide-text animate-up delay-2">Etape 2: Choix prestations.</p>
+                        
+                        <div class="mockup-container animate-up delay-3" style="height: 500px;">
+                            <img src="img/Prestations_onsite.png" alt="Capture page prestations" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SLIDE 11 : MAQUETTE RDV -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">08. Petit tour du site</span>
+                        <h2 class="slide-title medium animate-up delay-1">Petit tour du <span>site</span></h2>
+                        <p class="slide-text animate-up delay-2">Etape 3: Prise de rendez-vous.</p>
+                        
+                        <div class="mockup-container animate-up delay-3" style="height: 500px;">
+                            <img src="img/Planning_onsite.png" alt="Capture formulaire rendez-vous" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SLIDE 12 : CONFIRMATION PLANNING -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">08. Petit tour du site</span>
+                        <h2 class="slide-title medium animate-up delay-1">Petit tour du <span>site</span></h2>
+                        <p class="slide-text animate-up delay-2">Etape 4: confirmation du planning.</p>
+                        <div class="mockup-container animate-up delay-3" style="height: 500px;">
+                            <img src="img/confirmation_planing.png" alt="Capture confirmation planning" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SLIDE 13 : MAQUETTE PLUGIN -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">08. Petit tour du site</span>
+                        <h2 class="slide-title medium animate-up delay-1">Coté <span>admin</span></h2>
+                        <p class="slide-text animate-up delay-2">Plugin Resa horaires.</p>
+                        <div class="screenshot-grid cols-2 animate-up delay-3" style="margin-top: 14px;">
+                            <div class="screenshot-slot">
+                                <img src="img/FJF_Resaplugin.png" alt="Capture plugin resa">
+                                <small>Plugin fjf-rdv</small>
+                            </div>
+                            <div class="screenshot-slot">
+                                <img src="img/FJF_Reservations.png" alt="Capture plugin reservations">
+                                <small>Plugin fjf-reservations</small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- SLIDE BONUS : PARCOURS RDV -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">09. Parcours Utilisateur</span>
+                        <h2 class="slide-title medium animate-up delay-1">Parcours <span>Rendez-vous</span> en 3 étapes</h2>
+                        <div class="screenshot-grid cols-3 animate-up delay-2" style="margin-top: 14px;">
+                            <div class="screenshot-slot">
+                                <img src="img/Prestations_onsite.png" alt="Etape 1 choix de prestation">
+                                <small>1. Choix prestation</small>
+                            </div>
+                            <div class="screenshot-slot">
+                                <img src="img/Planning_onsite.png" alt="Etape 2 planning">
+                                <small>2. Sélection planning</small>
+                            </div>
+                            <div class="screenshot-slot">
+                                <img src="img/confirmation_planing.png" alt="Etape 3 confirmation planning">
+                                <small>3. Confirmation planning</small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SLIDE BONUS : PREUVES PLUGINS -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">10. Formulaire & message</span>
+                        <h2 class="slide-title medium animate-up delay-1">Plugin <span>Reservation</span> / Message client</h2>
+                        <div class="screenshot-grid cols-2 animate-up delay-2">
+                            <div class="screenshot-slot">
+                                <img src="img/formulaire-rdv.png" alt="Formulaire de rendez-vous plugin FJF">
+                                <small>Formulaire RDV</small>
+                            </div>
+                            <div class="screenshot-slot">
+                                <img src="img/FJF_rdvplugin.png" alt="Plugin FJF rdv">
+                                <small>FJF rdv plugin</small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SLIDE 14 : STACK TECHNIQUE -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">10. Technique</span>
+                        <h2 class="slide-title medium animate-up delay-1">Stack <span>Technologique</span></h2>
+                        <p class="slide-text animate-up delay-2">Une base robuste, sécurisée et évolutive reposant sur les standards du marché.</p>
+                        
+                        <div class="feature-card animate-up delay-3" style="text-align: center; padding: 60px;">
+                            <h3 style="font-size: 2.5rem; margin-bottom: 40px;">WordPress CMS</h3>
+                            <div class="tech-logos" style="justify-content: center;">
+                                <div style="text-align: center;">
+                                    <i class="bi bi-wordpress" style="color: #21759b;"></i>
+                                    <p style="margin-top: 10px; font-weight: bold;">Cœur</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <i class="bi bi-filetype-php" style="color: #8993be;"></i>
+                                    <p style="margin-top: 10px; font-weight: bold;">Logique</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <i class="bi bi-filetype-js" style="color: #f59e0b;"></i>
+                                    <p style="margin-top: 10px; font-weight: bold;">Interactions</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <i class="bi bi-filetype-css" style="color: #1572b6;"></i>
+                                    <p style="margin-top: 10px; font-weight: bold;">Design</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <i class="bi bi-shield-check" style="color: #22c55e;"></i>
+                                    <p style="margin-top: 10px; font-weight: bold;">Sécurité</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- SLIDE 16 : PLANNING -->
+                <section class="slide">
+                    <div class="slide-content">
+                        <span class="slide-subtitle animate-up">12. Gestion de Projet</span>
+                        <h2 class="slide-title medium animate-up delay-1">Prochaines <span>Fonctionnalités</span></h2>
+                        
+                        <div class="grid-cards animate-up delay-2" style="grid-template-columns: repeat(4, 1fr); gap: 20px;">
+                            <div class="feature-card" style="padding: 30px; text-align: center;">
+                                <h3 style="color: var(--texte-secondaire);">Bientôt</h3>
+                                <div class="card-icon" style="margin: 20px auto;"><i class="bi bi-check-all"></i></div>
+                                <p style="font-weight: bold; color: var(--texte-principal);">Page de connexion client</p>
+                            </div>
+                            <div class="feature-card highlight" style="padding: 30px; text-align: center;">
+                                <h3 style="color: var(--rouge-fjf);">Priorité</h3>
+                                <div class="card-icon" style="margin: 20px auto;"><i class="bi bi-person-badge"></i></div>
+                                <p style="font-weight: bold; color: var(--texte-principal);">Espace client personnalisé</p>
+                            </div>
+                            <div class="feature-card" style="padding: 30px; text-align: center; opacity: 0.6;">
+                                <h3 style="color: var(--texte-secondaire);">Ensuite</h3>
+                                <div class="card-icon" style="margin: 20px auto;"><i class="bi bi-clock-history"></i></div>
+                                <p style="font-weight: bold; color: var(--texte-principal);">Historique des interventions</p>
+                            </div>
+                            <div class="feature-card" style="padding: 30px; text-align: center; opacity: 0.6;">
+                                <h3 style="color: var(--texte-secondaire);">Après</h3>
+                                <div class="card-icon" style="margin: 20px auto;"><i class="bi bi-bell"></i></div>
+                                <p style="font-weight: bold; color: var(--texte-principal);">Notifications RDV et rappels</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SLIDE 17 : MERCI -->
+                <section class="slide">
+                    <div class="slide-content" style="text-align: center;">
+                        <div class="card-icon animate-up" style="margin: 0 auto 40px auto; width: 120px; height: 120px; font-size: 4rem; border-radius: 50%; background: var(--rouge-fjf); color: white;">
+                            <i class="bi bi-chat-quote"></i>
+                        </div>
+                        <h2 class="slide-title animate-up delay-1" style="font-size: clamp(2.3rem, 5vw, 4rem);">Place aux <span>Questions</span></h2>
+                        <p class="slide-text animate-up delay-2" style="margin: 0 auto 50px auto;">
+                            Merci de votre attention. <br>Nous sommes à votre écoute pour échanger sur le projet.
+                        </p>
+                        <div class="animate-up delay-3">
+                            <a href="https://github.com/Cruzax/FJF-WORDPRESS.git" target="_blank" class="btn-primary" style="background: #111315;">
+                                <i class="bi bi-github"></i> Accéder au Dépôt GitHub
+                            </a>
+                        </div>
+                        <img src="img/fjf-logo-2-removebg-preview.png" alt="FJF Automobiles" style="height: 50px; object-fit: contain; margin: 30px auto 0 auto; display: block; opacity: 0.65;">
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Contrôles -->
+        <div class="controls-overlay">
+            <button class="nav-btn" id="prevBtn" aria-label="Slide précédente">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            
+            <div class="pagination" id="pagination">
+                <!-- Les points sont générés par JS -->
+            </div>
+
+            <button class="nav-btn" id="nextBtn" aria-label="Slide suivante">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="image-lightbox" id="imageLightbox" aria-hidden="true" role="dialog" aria-label="Zoom image">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Fermer le zoom">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <img id="lightboxImage" src="" alt="Image en zoom">
+        </div>
+    </div>
+
+    <!-- Script de navigation -->
+    <script>
+        // ===== Etat & references =====
+        const track = document.getElementById('carouselTrack');
+        const slides = Array.from(document.querySelectorAll('.slide'));
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const pagination = document.getElementById('pagination');
+        const slideCounter = document.getElementById('slideCounter');
+        const viewport = document.getElementById('viewport');
+        const imageLightbox = document.getElementById('imageLightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxClose = document.getElementById('lightboxClose');
+        const zoomableImages = Array.from(document.querySelectorAll('.mockup-container img, .screenshot-slot img'));
+
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+        let dots = [];
+
+        // ===== Rendering =====
+        function updateUI() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('active', index === currentIndex);
+            });
+
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === totalSlides - 1;
+            slideCounter.textContent = `${currentIndex + 1} / ${totalSlides}`;
+        }
+
+        // ===== Navigation =====
+        function goToSlide(index) {
+            if (index < 0 || index >= totalSlides) {
+                return;
+            }
+
+            currentIndex = index;
+            updateUI();
+        }
+
+        function nextSlide(event) {
+            if (event) {
+                event.stopPropagation();
+            }
+            goToSlide(currentIndex + 1);
+        }
+
+        function prevSlide(event) {
+            if (event) {
+                event.stopPropagation();
+            }
+            goToSlide(currentIndex - 1);
+        }
+
+        function openLightbox(image) {
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt || 'Image en zoom';
+            imageLightbox.classList.add('open');
+            imageLightbox.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('lightbox-open');
+        }
+
+        function closeLightbox() {
+            imageLightbox.classList.remove('open');
+            imageLightbox.setAttribute('aria-hidden', 'true');
+            lightboxImage.src = '';
+            document.body.classList.remove('lightbox-open');
+        }
+
+        // ===== Init =====
+        function initPagination() {
+            slides.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.className = 'dot';
+                dot.setAttribute('aria-label', `Aller à la slide ${index + 1}`);
+                dot.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                    goToSlide(index);
+                });
+                pagination.appendChild(dot);
+            });
+
+            dots = Array.from(document.querySelectorAll('.dot'));
+        }
+
+        function bindEvents() {
+            prevBtn.addEventListener('click', prevSlide);
+            nextBtn.addEventListener('click', nextSlide);
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && imageLightbox.classList.contains('open')) {
+                    closeLightbox();
+                    return;
+                }
+
+                if (event.key === 'ArrowRight' || event.key === ' ') {
+                    nextSlide();
+                } else if (event.key === 'ArrowLeft') {
+                    prevSlide();
+                }
+            });
+
+            zoomableImages.forEach((image) => {
+                image.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                    openLightbox(image);
+                });
+            });
+
+            lightboxClose.addEventListener('click', closeLightbox);
+            imageLightbox.addEventListener('click', (event) => {
+                if (event.target === imageLightbox) {
+                    closeLightbox();
+                }
+            });
+        }
+
+        initPagination();
+        bindEvents();
+        updateUI();
+    </script>
+</body>
+</html>
