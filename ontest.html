@@ -593,7 +593,17 @@
                     return;
                 }
 
-                if (event.key === 'ArrowRight' || event.key === ' ') {
+                if (event.key === ' ' || event.code === 'Space') {
+                    // Avoid browser default behavior and key repeat causing double navigation.
+                    event.preventDefault();
+                    if (event.repeat) {
+                        return;
+                    }
+                    nextSlide();
+                    return;
+                }
+
+                if (event.key === 'ArrowRight') {
                     nextSlide();
                 } else if (event.key === 'ArrowLeft') {
                     prevSlide();
